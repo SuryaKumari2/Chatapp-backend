@@ -7,7 +7,7 @@ const cors=require('cors')
 const jwt = require('jsonwebtoken');
 const Msgmodel=require('./models/msgModel')
 dotenv.config();
-mongoose.connect(process.env.MONGO_URL).then(()=>console.log('db connected')).catch((error)=>console.log(error))
+mongoose.connect(process.env.MONGO_URL).then(()=>console.log('db connected successfully')).catch((error)=>console.log(error))
  const app=express();
  const PORT=5005;
  app.use(express.json());
